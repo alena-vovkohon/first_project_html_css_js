@@ -1,0 +1,80 @@
+.info-plan {
+  padding: 80px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  .plan {
+    position: relative;
+    margin: 0 10px;
+    padding: 15px;
+    height: 866px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(43, 41, 45, 0.2);
+    border-radius: 8px;
+    @include mq(860px) {
+      max-width: 500px;
+      height: auto;
+      margin: 0 auto 25px;
+    }
+    p.little {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    h4 {
+      font-weight: normal;
+      @include mq(1040px) {
+        font-size: 18px;
+      }
+      @include mq(915px) {
+        font-size: 16px;
+      }
+    }
+    h3 {
+      @include mq(920px) {
+        font-size: 20px;
+      }
+    }
+    img,
+    h3,
+    h4 {
+      padding-bottom: 20px;
+    }
+    img {
+      padding-top: 20px;
+      width: auto;
+      margin: 0 auto;
+    }
+    form {
+      text-align: center;
+      padding-bottom: 40px;
+    }
+    hr {
+      border-bottom: 1px solid rgba(43, 41, 45, 0.2);
+    }
+    &:hover {
+      border: 1px solid rgba(43, 41, 45, 0.5);
+    }
+    ul {
+      padding: 30px 0 20px 0;
+      list-style-type: none;
+      li {
+        padding: 5px 0;
+
+        &::before {
+          content: '\2713';
+          height: 24px;
+          width: 24px;
+          display: inline-block;
+          color: #3041c4;
+        }
+      }
+    }
+  }
+  @include mq(860px) {
+    height: auto;
+    padding: 30px 0;
+    flex-direction: column;
+  }
+}

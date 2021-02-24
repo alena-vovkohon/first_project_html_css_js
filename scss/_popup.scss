@@ -1,0 +1,48 @@
+.popup {
+  padding: 31px 30px;
+  display: none;
+  max-width: 612px;
+  border-radius: 10px;
+  position: absolute;
+  top: 90px;
+  right: 375px;
+  background: #ffffff;
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  background-position: top -45px center;
+  @include mq(1195px) {
+    right: 220px;
+    padding: 15px 15px;
+    max-width: 500px;
+  }
+  @include mq(760px) {
+    right: 120px;
+  }
+  .menu-library {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat (2 1fr);
+    li {
+      padding-right: 28px;
+      padding-bottom: 30px;
+      @include mq(1195px) {
+        padding-right: 18px;
+        padding-bottom: 15px;
+      }
+      h4 {
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 26px;
+        span {
+          padding-bottom: 35px;
+          &:hover {
+            color: #009b4d;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

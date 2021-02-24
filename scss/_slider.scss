@@ -1,0 +1,91 @@
+.slider {
+  padding: 100px 0 66px 0;
+  height: 455px;
+  background-image: url(../img/ouch3.png);
+  background-repeat: no-repeat;
+  background-size: 243px;
+  background-position: right 26px bottom;
+  @include mq(960px) {
+    padding: 50px 0 33px 0;
+    height: auto;
+  }
+  @include mq(650px) {
+    height: 650px;
+    background-size: 243px;
+    background-position: bottom center;
+  }
+  @include mq(500px) {
+    height: 700px;
+  }
+  .box-slider {
+    max-width: 1000px;
+    margin: 0 auto;
+    button.slick-next.slick-arrow,
+    button.slick-prev.slick-arrow {
+      display: none !important;
+      @include mq(1070px) {
+        width: 800px;
+      }
+    }
+    .slick-list {
+      position: relative;
+      .slick-track {
+        width: 100%;
+      }
+      .second.slick-slide {
+        position: absolute;
+        left: 0;
+      }
+      .third.slick-slide {
+        position: absolute;
+        left: 0;
+      }
+      p.blue {
+        padding-bottom: 28px;
+        text-align: center;
+        @include mq(500px) {
+          text-align: left;
+        }
+      }
+      p.grey {
+        padding-bottom: 34px;
+        margin: 0 auto;
+        text-align: center;
+        @include mq(500px) {
+          text-align: left;
+        }
+      }
+      p.little {
+        @include mq(500px) {
+          text-align: left;
+        }
+      }
+      .second p.grey {
+        color: #009b4d;
+      }
+      .third p.grey {
+        color: #3142c6;
+      }
+    }
+  }
+  ul.slick-dots {
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 100px;
+    display: flex;
+    color: #2b292d;
+    opacity: 0.7;
+    justify-content: space-between;
+  }
+  li button {
+    text-align: center;
+    display: none;
+  }
+  li {
+    font-size: 1.5rem;
+  }
+  li.slick-active::marker {
+    color: #3142c5;
+    opacity: 1.2;
+  }
+}

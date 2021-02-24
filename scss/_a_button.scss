@@ -1,0 +1,87 @@
+a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: #2b292d;
+  font-size: 18px;
+  line-height: 1.39;
+}
+.box-logo a {
+  padding: 0;
+}
+.information a {
+  transition: border, box-shadow 0.3s;
+  &:hover {
+    color: #009b4d;
+  }
+}
+
+.button {
+  width: 160px;
+  height: 48px;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 1e-5) 100%
+    ),
+    #3040c4;
+  background-blend-mode: overlay, normal;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 0.72;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  transition: border, box-shadow 0.3s;
+  &:hover {
+    width: 170px;
+    height: 55px;
+  }
+
+  @include mq(480px) {
+    width: 50%;
+    margin: 5px;
+  }
+  @include mq(400px) {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+.button a {
+  margin: 0 10px;
+  color: #ffffff;
+}
+
+form {
+  button {
+    height: 48px;
+    width: 100%;
+    background: #f2f2f2;
+    color: #3040c4;
+    border: 1px solid #3041c5;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 0.72;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    transition: border, box-shadow 0.3s;
+    &:hover {
+      background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.05) 0%,
+          rgba(255, 255, 255, 1e-5) 100%
+        ),
+        #3040c4;
+      background-blend-mode: overlay, normal;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
+        0px 4px 6px rgba(0, 0, 0, 0.05),
+        inset 0px 1px 0px rgb(255, 255, 255, 0.1);
+      color: #fff;
+    }
+  }
+}

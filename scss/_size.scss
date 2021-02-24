@@ -1,0 +1,100 @@
+h1 {
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 0.97;
+  letter-spacing: -0.5px;
+  color: #2b292d;
+  @include mq(910px) {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -0.3125px;
+  }
+  @include mq(760px) {
+    font-size: 50px;
+  }
+  @include mq(500px) {
+    font-size: 40px;
+  }
+  @include mq(400px) {
+    font-size: 38px;
+  }
+}
+h2 {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+  color: #2b292d;
+  @include mq(400px) {
+    font-size: 40px;
+  }
+}
+h3 {
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 26px;
+  color: #2b292d;
+}
+h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 32px;
+  color: #2b292d;
+}
+h5 {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #2b292d;
+}
+p {
+  font-size: 24px;
+  line-height: 1.42;
+  color: #2b292d;
+  &.small {
+    font-size: 18px;
+    @include mq(650px) {
+      display: none;
+    }
+  }
+  @include mq(400px) {
+    font-size: 20px;
+  }
+}
+p.little {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #2b292d;
+  span.bold {
+    font-weight: 800;
+  }
+}
+p.blue {
+  color: #3142c6;
+  font-style: normal;
+  font-weight: bold;
+}
+p.grey {
+  font-style: normal;
+  font-weight: normal;
+}
+span.bold {
+  font-weight: 800;
+}
+span.thin {
+  @include mq(860px) {
+    display: none;
+  }
+}
+span.price {
+  opacity: 0.5;
+}
+span.red {
+  font-weight: bold;
+  color: #e22729;
+}

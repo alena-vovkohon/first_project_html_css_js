@@ -1,0 +1,115 @@
+.block-selector {
+  padding: 40px 0 40px 0;
+  position: relative;
+  background-image: url(../img/ouch2.svg), url(../img/Invision_Screen.png);
+  background-size: 167px 166px, 702px 602px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: left -40px top 258px, right center;
+  @include mq(1200px) {
+    background-image: url(../img/Invision_Screen.png);
+    background-position: right -20% center;
+    background-size: 702px 602px;
+    background-repeat: no-repeat;
+  }
+  @include mq(1200px) {
+    background-position: right -40% center;
+  }
+  @include mq(960px) {
+    background-image: url(../img/ouch.png);
+    background-position: right center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+  }
+  @include mq(650px) {
+    height: 600px;
+    background-position: bottom 30px center;
+    background-size: 35%;
+  }
+  @include mq(400px) {
+    background-size: 50%;
+  }
+  .information-selector {
+    display: inline-block;
+    width: 45%;
+    @include mq(960px) {
+      width: 50%;
+    }
+    @include mq(650px) {
+      width: 100%;
+    }
+    a {
+      display: none;
+      @include mq(650px) {
+        display: inline-block;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        font-size: 14px;
+        line-height: 22px;
+        color: rgba(43, 41, 45, 0.6);
+      }
+    }
+    h4.green {
+      color: #009b4d;
+      padding-bottom: 24px;
+    }
+    h4.blue {
+      color: #3142c6;
+      padding-bottom: 8px;
+      &::before {
+        content: '';
+        height: 24px;
+        width: 24px;
+        display: inline-block;
+        background-image: url(../img/Icon_compas.png);
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: left top 4px;
+      }
+    }
+    h2 {
+      padding-bottom: 30px;
+      @include mq(400px) {
+        line-height: 40px;
+      }
+    }
+    p {
+      padding-bottom: 42px;
+    }
+    p.small {
+      display: block;
+      border-bottom: solid 2px #3142c6;
+      padding-bottom: 20px;
+      @include mq(650px) {
+        display: none;
+        border-bottom: none;
+      }
+    }
+    h4 {
+      padding-bottom: 44px;
+      &.icon1::before {
+        content: '';
+        height: 24px;
+        width: 24px;
+        display: inline-block;
+        background-image: url(../img/Icon_costl.png);
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: left top 5px;
+      }
+      &.icon2::before {
+        content: '';
+        height: 24px;
+        width: 24px;
+        display: inline-block;
+        background-image: url(../img/Icon_comp.png);
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: left top 5px;
+      }
+      @include mq(650px) {
+        display: none;
+      }
+    }
+  }
+}

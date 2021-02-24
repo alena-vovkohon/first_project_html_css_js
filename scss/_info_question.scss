@@ -1,0 +1,23 @@
+.text-question,
+.text-answer {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-size: 22px;
+  }
+  .info-text {
+    width: 48%;
+  }
+  @include mq(860px) {
+    height: auto;
+    padding: 30px 0;
+    flex-direction: column;
+    .info-text {
+      padding: 10px 0;
+      width: 100%;
+    }
+  }
+}

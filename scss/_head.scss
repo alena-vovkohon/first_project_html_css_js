@@ -1,0 +1,67 @@
+.block-head {
+  background: #f3c6bd;
+  background-image: url(../img/ouch.svg);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: right 25px center;
+  @include mq(980px) {
+    height: 580px;
+    background-position: bottom right 15px;
+    background-size: 70%;
+  }
+  @include mq(680px) {
+    height: 500px;
+  }
+  @include mq(500px) {
+    background-position: center bottom;
+  }
+  .head {
+    display: inline-block;
+    width: 66%;
+    padding: 40px 0 77px 0;
+    @include mq(980px) {
+      width: 80%;
+    }
+    @include mq(760px) {
+      display: block;
+      width: 90%;
+    }
+    @include mq(500px) {
+      width: 100%;
+    }
+    .text h1 {
+      padding-bottom: 34px;
+      @include mq(400px) {
+        padding-bottom: 15px;
+      }
+    }
+    .text p {
+      padding-bottom: 58px;
+      @include mq(680px) {
+        padding-bottom: 20px;
+      }
+    }
+    .box.btn {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: start;
+      align-items: center;
+      @include mq(400px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .box.button.button-white {
+        background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.05) 0%,
+            rgba(255, 255, 255, 1e-5) 100%
+          ),
+          #ffffff;
+        a {
+          color: #3040c4;
+        }
+      }
+    }
+  }
+}

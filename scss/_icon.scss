@@ -1,0 +1,27 @@
+.icon {
+  .fontawesome a.icons {
+    color: gray;
+    font-size: 2.5rem;
+    margin: 0 10px;
+    display: inline-block;
+    size: 1x;
+    i[class$='facebook']:hover {
+      color: rgb(56, 88, 152);
+    }
+    i[class$='twitter']:hover {
+      color: rgb(0, 172, 238);
+    }
+    i[class$='instagram']:hover {
+      background: linear-gradient(
+        175deg,
+        #515bd4 0%,
+        #8134af 25%,
+        #dd247b 50%,
+        #feda77 75%,
+        #f58529 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

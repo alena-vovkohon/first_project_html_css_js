@@ -1,0 +1,37 @@
+.block-head {
+  background: #f3c6bd;
+  background: linear-gradient(
+    360deg,
+    rgba(249, 250, 251, 0.005) 0%,
+    rgba(0, 0, 0, 0.005) 100%
+  );
+  mix-blend-mode: normal;
+  .head {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 66%;
+    padding: 100px 0 50px 0;
+    @include mq(980px) {
+      width: 80%;
+    }
+    @include mq(760px) {
+      display: block;
+      width: 90%;
+    }
+    @include mq(500px) {
+      width: 100%;
+    }
+    .text h2 {
+      padding-bottom: 15px;
+      @include mq(400px) {
+        padding-bottom: 15px;
+      }
+    }
+    .text p {
+      @include mq(680px) {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}

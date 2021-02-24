@@ -1,0 +1,18 @@
+.block-head {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  .head {
+    display: inline-block;
+    width: 66%;
+    padding: 40px 0 77px 0;
+    @include mq(980px) {
+      width: 80%;
+    }
+    @include mq(760px) {
+      display: block;
+      width: 90%;
+    }
+    @include mq(500px) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.container {
+  width: calc(100% - 130px - 130px);
+  margin: 0 auto;
+  @include mq(1199px) {
+    width: calc(100% - 50px - 50px);
+  }
+  @include mq(860px) {
+    width: calc(100% - 40px - 40px);
+  }
+  @include mq(760px) {
+    width: 95%;
+  }
+  &.container-header {
+    @include mq(760px) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.box-logos {
+  width: 100%;
+  height: 135px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mq(860px) {
+    height: auto;
+    padding: 10px 0;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 10px;
+  }
+  img {
+    @include mq(480px) {
+      width: 50%;
+    }
+  }
+}
