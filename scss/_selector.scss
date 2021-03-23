@@ -1,12 +1,13 @@
 .block-selector {
   padding: 40px 0 40px 0;
   position: relative;
-  background-image: url(../img/ouch2.svg), url(../img/Invision_Screen.png);
+  background-image: url(../build/img/ouch2.svg),
+    url(../build/img/Invision_Screen.png);
   background-size: 167px 166px, 702px 602px;
   background-repeat: no-repeat, no-repeat;
   background-position: left -40px top 258px, right center;
   @include mq(1200px) {
-    background-image: url(../img/Invision_Screen.png);
+    background-image: url(../build/img/Invision_Screen.png);
     background-position: right -20% center;
     background-size: 702px 602px;
     background-repeat: no-repeat;
@@ -15,7 +16,7 @@
     background-position: right -40% center;
   }
   @include mq(960px) {
-    background-image: url(../img/ouch.png);
+    background-image: url(../build/img/ouch.png);
     background-position: right center;
     background-size: 40%;
     background-repeat: no-repeat;
@@ -61,7 +62,7 @@
         height: 24px;
         width: 24px;
         display: inline-block;
-        background-image: url(../img/Icon_compas.png);
+        background-image: url(../build/img/Icon_compas.png);
         background-size: 80%;
         background-repeat: no-repeat;
         background-position: left top 4px;
@@ -92,7 +93,7 @@
         height: 24px;
         width: 24px;
         display: inline-block;
-        background-image: url(../img/Icon_costl.png);
+        background-image: url(../build/img/Icon_costl.png);
         background-size: 80%;
         background-repeat: no-repeat;
         background-position: left top 5px;
@@ -102,7 +103,7 @@
         height: 24px;
         width: 24px;
         display: inline-block;
-        background-image: url(../img/Icon_comp.png);
+        background-image: url(../build/img/Icon_comp.png);
         background-size: 80%;
         background-repeat: no-repeat;
         background-position: left top 5px;
